@@ -5,7 +5,8 @@ import NavigationBar from './NavigationBar';
 import VideoFeed from './VideoFeed';
 import RightSideOptions from './RightSideOptions';
 import TopNavigationBar from './TopNavigationBar';
-import SOSModal from './SOSModal';
+// import SOSModal from './SOSModal';
+import ReportModal from './ReportModal';
 
 const MainLayout = () => {
     const [isSOSModalOpen, setIsSOSModalOpen] = useState(false);
@@ -38,7 +39,7 @@ const MainLayout = () => {
                 onSOSClick={handleSOSClick}
             />
             <NavigationBar />
-            {isSOSModalOpen && <SOSModal onClose={handleModalClose} />}
+            {isSOSModalOpen && <ReportModal onClose={handleModalClose} />}
         </div>
     );
 };
