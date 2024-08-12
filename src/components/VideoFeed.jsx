@@ -3,24 +3,18 @@
 import React from 'react';
 
 const VideoFeed = () => {
-    // Dummy data
-    const videoData = {
-        username: '@mediamodifier',
-        description: 'This is a TikTok mobile video mockup. Add your own text, images, and use Emoji #mockup #tiktok #staycool',
-        music: 'Original sound - mediamodifier',
-    };
-
     return (
         <div className="video-feed">
-            {/* Video content placeholder */}
-            <div className="video-placeholder">Video Content</div>
-            {/* Video details */}
+            <video className="background-video" autoPlay loop muted>
+                <source src="/videos/tiktok.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <div className="video-details">
-                <p className="username">{videoData.username}</p>
-                <p className="description">{videoData.description}</p>
+                <div className="username">@mediamodifier</div>
+                <div className="description">This is a TikTok mobile video mockup. Add your own text, images, and use Emoji #mockup #tiktok #staycool</div>
                 <div className="music">
                     <span role="img" aria-label="music-note">🎵</span>
-                    {videoData.music}
+                    Original sound - mediamodifier
                 </div>
             </div>
         </div>

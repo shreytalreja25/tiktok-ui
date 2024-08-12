@@ -289,6 +289,15 @@ textarea {
   color: white;
 }
 
-textarea{
+/* Additional Textarea Adjustment */
+textarea {
   width: 85%;
+  padding: 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+  resize: none;
 }
