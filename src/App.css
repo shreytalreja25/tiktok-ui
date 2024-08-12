@@ -90,7 +90,7 @@ body {
 .video-details {
   position: relative;
   z-index: 2; /* Ensure the text appears above the video */
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .username {
@@ -194,7 +194,6 @@ body {
   font-size: 10px;
   margin-top: 2px; /* Reduced margin for better spacing */
 }
-
 /* Modal Styles */
 .modal-overlay {
   position: fixed;
@@ -217,7 +216,7 @@ body {
   text-align: center;
   color: white; /* Ensure the font color is white for readability */
   width: 80%; /* Adjust width if needed */
-  max-width: 300px; /* Limit the maximum width */
+  max-width: 350px; /* Limit the maximum width */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
   z-index: 1100; /* Ensure modal content is on top of the overlay */
 }
@@ -238,12 +237,14 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center-align form elements */
 }
 
 label {
   margin-bottom: 10px;
   font-size: 14px;
+  width: 100%; /* Make labels span the entire width */
+  text-align: left; /* Align text to the left for better readability */
 }
 
 select, textarea {
@@ -283,9 +284,18 @@ textarea {
   color: white;
 }
 
+/* Additional Adjustments for Better Layout */
+.modal-content select, 
+.modal-content textarea {
+  margin-bottom: 15px; /* Add spacing between inputs */
+}
+
+.modal-content button {
+  margin-bottom: 10px;
+}
 /* Additional Textarea Adjustment */
 textarea {
-  width: 85%;
+  width: 95%;
   padding: 8px;
   background-color: #333;
   color: white;
